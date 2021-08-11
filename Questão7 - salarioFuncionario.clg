@@ -1,0 +1,48 @@
+algoritmo salarioFuncionario;
+// Síntese
+//  Objetivo:  Construir um algoritmo que leia o nome do funcionário, o sexo (F ou M), o número de matrícula, o número de horas trabalhadas, o valor que recebe por hora e calcular o salário.
+//  Entrada : Nome, sexo, matrícula, horas trabalhadas, valor da hora.
+//  Saída   : Valor do salário.
+
+
+principal
+	// Declarações
+    texto nomeFuncionario;
+    caracter sexoFuncionario;
+    real matriculaFuncionario, horasTrabalhadas, valorHora, valorTotalHoras, salarioFuncionario;
+    
+	// Instruções
+    //Pedir ao usuário que digite o nome do funcionário. - Entrada
+    escreval ("Digite o nome do Funcionário: ");
+    leia (nomeFuncionario);
+    
+   //Pedir ao usuário que digite o sexo do funcionário. - Entrada
+    escreval ("Digite o sexo do Funcionário: ");
+    leiaCaracter (sexoFuncionario);
+    
+   //Pedir ao usuário que digite o número da matrícula do funcionário. - Entrada
+    escreval ("Digite o número da matrícula do Funcionário: ");
+    leia (matriculaFuncionario);
+    
+   //Pedir ao usuário que digite o número de horas trabalhadas. - Entrada
+    escreval ("Digite o número de horas trabalhadas: ");
+    leia (horasTrabalhadas);
+    
+   //Pedir ao usuário que digite o valor da hora trabalhada. - Entrada
+    escreval ("Digite o valor da hora trabalhada: ");
+    leia (valorHora);
+    
+   //Fazer o cálculo  - Processamento
+    valorTotalHoras = horasTrabalhadas * valorHora;
+    salarioFuncionario = valorTotalHoras;
+    
+  //Mostrar ao usuário o resultado - Saída
+	escreval("Funcionário: ", nomeFuncionario);
+	escreval("Sexo: ", sexoFuncionario);
+	escreval("Matrícula: ", matriculaFuncionario);
+	escreval("Número de horas trabalhadas: ", horasTrabalhadas);
+	escreval("Valor únitário da hora trabalhada: R$", valorHora);
+	escreval("O salário do funcionário é: R$", salarioFuncionario);
+	
+fimPrincipal
+ 

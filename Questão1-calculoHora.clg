@@ -1,0 +1,27 @@
+algoritmo calculoHora;
+// Síntese
+//  Objetivo:  Fazer um algoritmo que leia um número inteiro de horas e mostre ao usuário o correspondente em minutos e segundos destas horas.
+//  Entrada : hora
+//  Saída   : minutos, segundos
+
+
+principal
+	// Declarações
+	inteiro hora;
+	real minutos, segundos;
+	
+	// Instruções
+	//Pedir ao usuário que digite o valor inteiro de hora - Entrada
+	escreval ("Digite o número inteiro de horas: "); //Mostra a instrução na tela, em forma de texto, ao usuário.
+	leia (hora); //Recebe o dado digitado pelo usuário.
+
+	//Transformar o número inteiro de horas em minutos e segundos  - Processamento
+	minutos = hora*60;
+	segundos = minutos*60;
+	
+	//Mostrar ao usuário o valor da hora digitada em minutos e segundos - Saída
+    escreval ("Horas: ",hora);
+    escreval ("Minutos: ", minutos);
+    escreva ("Segundos: ", segundos);
+	
+fimPrincipal
