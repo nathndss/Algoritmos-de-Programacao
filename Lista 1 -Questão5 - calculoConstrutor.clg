@@ -1,0 +1,25 @@
+algoritmo calculoConstrutor;
+// Síntese
+//  Objetivo:  Fazer um algoritmo para auxiliar um construtor a descobrir a quantidade de rolos e a quantidade de metros avulsos de fios que ele precisa adquirir.Sabe-se que cada rolo tem 50m.
+//  Entrada : Quantidade de fios total que o construtor precisa
+//  Saída   : Quantidade de rolos e metros de fios avulsos
+
+
+principal
+	// Declarações
+	inteiro quantidadeConstru, quantidadeRolos, quantidadeAvulso;
+	
+	// Instruções
+	//Pedir ao usuário que digite a quantidade de fios, em metros, que precisará para a construção. - Entrada
+	escreval ("Digite a quantidade de metros de fios que precisa para a construção: ");         //Mostra a instrução na tela, em forma de texto, ao usuário.
+	leia (quantidadeConstru);               //Recebe o dado digitado pelo usuário.
+	
+	//Fazer o cálculo  - Processamento
+	quantidadeRolos = quantidadeConstru/50;  //realiza a divisão da quantidade inserida pelo usuário por 50 que é a quantidade de metros em 1 rolo.
+    quantidadeAvulso = quantidadeConstru mod 50;  //Traz o resto da divisão, o que corresponde a quantidade avulsa de fios. O mod pode ser substituido por %.
+	
+	//Mostrar ao usuário o resto e o quociente - Saída
+	escreval ("Rolos: ", quantidadeRolos);                            //Mostra o resultado  na tela, em forma de texto, ao usuário.
+	escreval ("Metros de fios avulsos: ", quantidadeAvulso);          //Mostra o resultado  na tela, em forma de texto, ao usuário.
+	
+fimPrincipal
